@@ -16,7 +16,7 @@
 
 (Οποιαδήποτε έκδοση Python *3* είναι συμβατή)
 
-Ανοίξτε την Γραμμή εντολών και κατεβάστε το framework Flask με την εντολή:
+Ανοίξτε την Γραμμή εντολών από την Έναρξη και κατεβάστε το framework Flask με την εντολή:
 
 ```bash
 pip install flask
@@ -35,3 +35,4 @@ python app.py
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
