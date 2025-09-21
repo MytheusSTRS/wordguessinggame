@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <!-- https://www.youtube.com/watch?v=tXpFERibRaU -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <!-- Τέλος -->
+        <title>Μάντεψε τον αριθμό!</title>
+        <h1 id="main_title">Μάντεψε τον αριθμό</h1>
+    </head>
+    <body>
+
+    
+        <div id="game">
+            <div style="font-size: 12px; text-align: left;"><a id="form_buttons" href="{{ url_for('mainpage') }}"><--- Επιστροφή</a></div>
+            <br>
+            <div id="text_field">
+                <!-- https://www.w3schools.com/html/html_forms.asp -->
+                <form method="post">
+                <label>
+                    <div id="game_title">
+                        Γράψε στο παρακάτω πλαίσιο την προσπάθειά σου:<br><br>
+                    </div>
+                </label>
+                <input id="form_number" type="number" name="guess" min="1" max="100" placeholder="1" required autofocus>
+                <input id="form_buttons" type="submit" value="Μάντεψε" {% if gameover %} disabled {% endif %}>
+                <input id="form_buttons" type="reset" value="Reset">
+                </form>
+                <!-- Τέλος -->
+                <br><br>
+                <!-- Τυπώνει τα Hints που δίνει το παιχνίδι με ένα python for loop αρχίζοντας από το τέλος ([::-1])-->
+                <div id="hints">
+                    <p>Hints:</p><br>
+                    {% for i in hints[::-1] %}
+                    <p> {{i}} </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a id="form_buttons" style="border: #00ff4071 solid 2px;" href="{{ url_for('resetgame') }}">Reset Game</a>
+                <div style="text-align: center; margin-top:20px;">
+                    <a id="form_buttons" href="{{ url_for('scoreboard') }}" target="_blank">Δες τα Αποτελέσματα</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

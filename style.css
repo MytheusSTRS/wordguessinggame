@@ -1,0 +1,76 @@
+/* CSS για την εμφάνιση όλων των elements στην ιστοσελίδα */
+body {
+    background: linear-gradient(135deg, #1e1e1e, #352c2c);
+    color: #f5f5f5;
+    font-family: Helvetica;
+}
+
+#main_title {
+    font-size: 40px;
+    margin-top: 4%;
+    text-align: center;
+    color: #2b79ad;
+}
+
+#game {
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    background-color: #889dd893;
+    border: 3px solid #1316b8b9;
+    padding: 20px; 
+    width: 33%;
+    min-height: 280px;  
+}
+
+#game_title {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#c1 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+#start_button, #start_button:visited {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    border: 3px solid orange;
+    border-radius: 20px;
+    background-color: #ffa6008e;
+}
+
+#text_field {
+    text-align: center;
+}
+
+#form_number {
+    width: 44px;
+    height: 30px;
+}
+
+#form_buttons {
+width: auto;
+color: white;
+padding: 6px 16px;
+background-color: #2b79ad;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+text-decoration: none; /*Για το κουμπί επιστροφής*/
+}
+
+#form_buttons:hover {
+background-color: #215c82;
+}
+
+#hints {
+     text-align: left;
+     font-size: 18px
+}

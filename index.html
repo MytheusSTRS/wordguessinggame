@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <!-- https://www.youtube.com/watch?v=tXpFERibRaU -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+        <!-- Τέλος -->
+        <title>Μάντεψε τον αριθμό!</title>
+        <h1 id="main_title">Μάντεψε τον αριθμό</h1>
+    </head>
+    <body>
+
+    
+        <div id="game">
+            <div id="game_title">
+                Σκέφτομαι έναν αριθμό από το <b>1</b> έως το <b>100</b>...<br>
+                Δοκίμασε να τον μαντέψεις με όσες λιγότερες προσπάθειες μπορείς.<br><b>Καλή τύχη!</b>
+            </div>
+            <div id="c1">
+                <a id="start_button" href="{{ url_for('gamepage') }}">Ξεκίνα</a>
+            </div>
+        </div>
+
+    </body>
+</html> 
